@@ -131,7 +131,7 @@ var Layout = function () {
             e.stopPropagation();
             overlay.removeClass('work-popup-overlay-show');
         });
-        $(".work-popup-overlay").on('blur',function(){
+        overlay.on('blur',function(){
         $(this).fadeOut(300);
 });
     }
