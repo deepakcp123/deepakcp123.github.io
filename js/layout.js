@@ -131,9 +131,12 @@ var Layout = function () {
             e.stopPropagation();
             overlay.removeClass('work-popup-overlay-show');
         });
-        overlay.on('blur',function(){
-        $(this).fadeOut(300);
+       $(document).click(function(event) {
+  //if you click on anything except the modal itself or the "open modal" link, close the modal
+             e.stopPropagation();
+            overlay.removeClass('work-popup-overlay-show');
 });
+
     }
 
     return {
